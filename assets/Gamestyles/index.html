@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main-section">
+    <div id="animationBoard">
+        <div id="heigBox01"></div>
+        <div id="heigBox02"></div>
+    </div>
+    <section>
+        <div id="stylebox">
+            <div class="header">
+                <button id="closeButton">close</button>
+            </div>
+            <a href="#" style="text-decoration: none;"><button id="style01">normal</button></a>
+            <a href="/Game/GameStyles/neon/index.html" style="text-decoration: none;"><button
+                    id="style02">neon</button></a>
+        </div>
+        <div id="sideMenu">
+            <button id="close">
+                close
+            </button>
+            <button id="restart" onclick="restartGame()">
+                restart
+            </button>
+            <button id="selectStyle" onclick="selectAStyle()">
+                Select a style
+            </button>
+        </div>
+        <header>
+        <div class="header">
+            <button id="pause" onclick="optionMenu()">||</button>
+        </div>
+        <div id="coins">
+            <div id="img">
+                <img src="/Game/assets/img/coin.png" alt="" srcset="" id="coinImg">
+            </div>
+            <div id="qtdq">
+                0
+            </div>
+        </div>
+    </header>
+        <div class="game" id="game">
+            <div id="header">
+                <div id="you">
+                    <p>You: 0</p>
+                </div>
+                <div id="computer">
+                    <p>Computer: 0</p>
+                </div>
+            </div>
+            <div id="line1c"></div>
+            <div class="backgroundForGameStyle"></div>
+            <div class="row">
+                <button id="b1" onclick="boxClick('b1'), addLogic()"> </button>
+                <button id="b2" onclick="boxClick('b2'), addLogic()"> </button>
+                <button id="b3" onclick="boxClick('b3'), addLogic()"> </button>
+            </div>
+            <div class="row1">
+                <button id="b4" onclick="boxClick('b4'), addLogic()"> </button>
+                <button id="b5" onclick="boxClick('b5'), addLogic()"> </button>
+                <button id="b6" onclick="boxClick('b6'), addLogic()"> </button>
+            </div>
+            <div class="row2">
+                <button id="b7" onclick="boxClick('b7'), addLogic()"> </button>
+                <button id="b8" onclick="boxClick('b8'), addLogic()"> </button>
+                <button id="b9" onclick="boxClick('b9'), addLogic()"> </button>
+            </div>
+            <div class="secondTableForGame" id="secondTableForGame">
+                <div class="backgroundForGameStyleChild02">
+                    <div id="header02">
+                        <div id="youG2">
+                            You: 0
+                        </div>
+                        <div id="computer">
+                            <p>Computer: 0</p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <button id="game1" onclick="addAnimation()"> </button>
+                    <button id="game2" onclick="addAnimation()"> </button>
+                    <button id="game3" onclick="addAnimation()"> </button>
+                </div>
+                <div class="row1">
+                    <button id="game4" onclick="addAnimation()"> </button>
+                    <button id="game5" onclick="addAnimation()"> </button>
+                    <button id="game6" onclick="addAnimation()"> </button>
+                </div>
+                <div class="row2">
+                    <button id="game7" onclick="addAnimation()"> </button>
+                    <button id="game8" onclick="addAnimation()"> </button>
+                    <button id="game9" onclick="addAnimation()"> </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="clickEvents.js"></script>
+    <script src="userHtmlIteration.js"></script>
+</body>
+
+</html>
